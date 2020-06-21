@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "name" : "Bombardier",
+        "numberOfSeats" : 50
+    },
+    {
+        "id" : 2,
+        "name" : "boeing 737",
+        "numberOfSeats" : 200
+    },
+    {
+        "id" : 3,
+        "name" : "boeing 747",
+        "numberOfSeats" : 400
+    }
+]

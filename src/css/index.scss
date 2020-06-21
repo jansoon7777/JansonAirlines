@@ -1,0 +1,249 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-image: url("../sky2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: center;
+    min-width: 850px;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+.landing-header-title {
+    font-size: 40px;
+    margin-top: 40px;    
+}
+
+#login {
+    margin-bottom: 10px;
+}
+
+#password {
+    margin-bottom: 10px;
+}
+
+#logUser {
+    text-align: justify;
+    width: 120px;
+}
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.row {
+    padding: 10px;
+}
+
+.header {
+   width: 100%;
+   padding: 40px 0;
+
+}
+
+.logo {
+    width: 400px;
+    font-size: 48px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: navy;
+    text-align: center;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+
+.content {
+    background-color: white;
+    width: 1000px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+
+}
+
+.socials {
+    width: 100%;
+    text-align: center;
+    background-color: wheat;
+    text-decoration: none;
+}
+
+.socialdivs {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+.FB {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+.FB:hover {
+    background-color: blue;
+}
+
+.YT {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.YT:hover {
+    background-color: lightcoral;
+}
+
+.IG {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.IG:hover {
+    background-color: rgb(69, 133, 228);
+}
+
+.TW {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.TW:hover {
+    background-color: rgb(69, 164, 228);
+}
+
+.footer {
+    text-align: center;
+    background-color: navy;
+    padding: 20px;
+    color: white;
+}
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#logging {
+    border: 0;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+ol {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li {
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed white;
+}
+
+ol > li:hover {
+    background-color: lightblue;
+}
+
+ol > li:hover > a {
+    color: black;
+}
+
+ol > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40 px;
+    display: none;
+}
+
+ol > li:hover > ul {
+    display: block;
+}
+
+ol > li > ul > li {
+    background-color: cornflowerblue;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed white;
+}
+
+ol > li > ul > li:hover {
+    background-color: rgb(69, 133, 228);
+}
+
+#click {
+    width: 80px;
+    
+}
+
+input {
+    background-color: wheat;
+}
+
+#departure {
+    background-color: wheat;
+}
+
+#destination {
+    background-color: wheat;
+}
+
+#passenger {
+    background-color: wheat;
+}
+
+#click3 {
+    margin-top: 40px;
+}
+
+#extra {
+    background-color: wheat;
+}

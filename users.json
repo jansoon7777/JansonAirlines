@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 1,
+        "email": "user1@janson.com",
+        "password": "test1234",
+        "name": "User", 
+        "surname": "First"
+    },
+    {
+        "id" : 2,
+        "email": "user2@janson.com",
+        "password": "test1234",
+        "name": "User",
+        "surname": "Second"
+    }
+]

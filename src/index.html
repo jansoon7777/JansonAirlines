@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Janson Airlines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row landing-header">
+                <div class="col-11 landing-header-title">
+                    <p style="text-align: center"> <span style="color: navy;">Janson Airlines<br />
+                        </span>Fly High</p>
+                    <div npmstyle="clear: both;"></div>
+                </div>
+                <div class="col-1 logging-form">
+                    <form action="Logowanie" id="loginForm">
+                        <h4>Logowanie</h4>
+                        <input type="text" id="login">
+                        <input type="password" id="password" name=""><br>
+                        <button id="logUser" type="button">Zaloguj się</button><br><br>
+                        <div id="wrongLogin" class="wrongLogin hidden">Błędny login lub hasło.</div>
+                    </form>
+                    <div action="Logowanie" id="loggedInForm" class="hidden">
+                        <h3 id="hello-message">Witaj użytkowniku!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ol>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="/zarezerwujlot.html" class="link">Zarezerwuj lot</a></li>
+                <li><a href="#">Podróże</a>
+                    <ul>
+                        <li><a href="#">Krajowe</a></li>
+                        <li><a href="#">Europa</a></li>
+                        <li><a href="#">Afryka</a></li>
+                        <li><a href="#">Azja i Australia</a></li>
+                        <li><a href="#">Ameryka Północa</a></li>
+                        <li><a href="#">Ameryka Południowa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Przed podróżą</a>
+                    <ul>
+                        <li><a href="#">Zwrot biletów</a></li>
+                        <li><a href="#">Wybór bagażu</a></li>
+                        <li><a href="#">Ubezpieczenie</a></li>
+                        <li><a href="#">Cło</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Promocje</a>
+                    <ul>
+                        <li><a href="#">Zniżki</a></li>
+                        <li><a href="#">Dla rodziny</a></li>
+                        <li><a href="#">Oferty dla grup</a></li>
+                        <li><a href="#">Nowe połączenia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Status lotu</a></li>
+            </ol>
+        </div>
+
+        <div class="content">
+            <h3>Dlaczego Janson Airlines?</h3>
+            <p> W swojej flocie posiadamy nowoczesne samoloty typu Boeing 737, Boeing 747 i Bombardiery. Dzięki nim komfort podróży staje się o niebo lepszy. Nasze linie lotnicze szczycą się najwyżyszym stadardem obsługi klienta potwierdozny 5 gwiazdkami. Lata doświadczeń w przewozach pasażerskich pozwoliły nam w pełni rozwinąć skrzydła.</p>
+            <h4>Rozrywka na pokładzie</h4>
+            <p>Pokładowy program rozrywkowy Janson Airlines gwarantuje świetną rozrywkę na pokładzie. Najnowsze hity filmowe, filmy z klasyki kina, muzyka oraz gry zapewnią rozrywkę podczas podróży. Wystarczy wygodnie usiąść w fotelu i cieszyć się rozrywką na pokładzie samolotu Lufthansy.</p>
+            <p>Podróż samolotem? Więcej niż myślisz. Już w domu możesz cieszyć się na myśl, że na pokładzie samolotu obejrzysz swój ulubiony film. W nowym internetowym przewodniku po programie rozrywkowym znajdziesz ekscytujące zapowiedzi filmów, artykuły oraz aktualne informacje.</p>
+            <h5>Sportowe emocje</h5>
+            <p>Rozpoczyna się nowa era rozrywki na pokładzie - kanały telewizyjne na żywo! Dzięki Sport 24 zawsze będziesz na bieżąco ze wszystkimi transmisjami międzynarodowych wydarzeń sportowych oraz najnowszymi wiadomościami. Kanały są dostępne bezpłatnie we wszystkich klasach, podczas podróży międzykontynentalnych.</p>
+            <h4>Menu na pokładzie</h4>
+            <p>W Klasie Ekonomicznej Premium Janson Airlines również oferuje posiłki na porcelanowej zastawie, a pasażerowie są witani na pokładzie drinkiem. W Klasie Ekonomicznej wybór bezpłatnych posiłków i napojów jest zawsze na najwyższym poziomie. Menu dla dzieci oraz posiłki specjalne uzupełniają kompleksową ofertę kulinarną, którą można rozkoszować się podczas podróży Lufthansą.</p>
+
+        </div>
+        <div class="socials">
+            <div class="socialdivs">
+                <div class="FB"><a href="https:/www.facebook.com" target="_blank"><i
+                            class="icon-facebook-squared"></i></a></div>
+                <div class="IG"><a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>
+                <div class="TW"><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></div>
+                <div class="YT"><a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a></div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="footer">
+            Wszelkie prawa zastrzeżone. Copyright by Mateusz 2020
+        </div>
+
+        <script src="jquery-3.5.1.min.js"></script>
+
+        <script>
+
+            $(document).ready(function () {
+                var NavY = $('.nav').offset().top;
+
+                var stickyNav = function () {
+                    var ScrollY = $(window).scrollTop();
+
+                    if (ScrollY > NavY) {
+                        $('.nav').addClass('sticky');
+                    } else {
+                        $('.nav').removeClass('sticky');
+                    }
+                };
+
+                stickyNav();
+
+                $(window).scroll(function () {
+                    stickyNav();
+                });
+            });
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
