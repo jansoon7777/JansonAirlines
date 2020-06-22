@@ -1,19 +1,11 @@
-import {
-    sum
-} from "./sum";
 import 'bootstrap';
 import style from "./css/index.scss"
 import style2 from "./css/index2.scss"
 import users from "../users.json"
 import seats from "../seats.json"
-console.log("Hello World");
-console.log(sum(2, 4));
 addButtonEvent();
 addOnChangeEvents();
 var summary = new Object();
-
-let heading = document.querySelector("#demo"),
-    sumValue = sum(10, 5);
 
 import Icon from "./assets/img/proba.png"
 import Icon2 from "./assets/img/siedem.png"
@@ -21,20 +13,8 @@ import Icon2 from "./assets/img/siedem.png"
 console.log(users);
 var login = "1";
 var password = "1";
-var points = 0;
 
 document.getElementById("logUser").addEventListener("click", logUser);
-
-function checkingLogin() {
-    event.preventDefault();
-    console.log("test");
-    if ((document.getElementById("login").value == login) && (document.getElementById("password").value == password)) {
-        document.getElementById("logging").classList.add("disappear");
-        document.getElementById("question1").classList.remove("disappear");
-    } else {
-        document.getElementById("wrongLogin").classList.toggle("disappear");
-    }
-}
 
 function logUser() {
     var loginSucceeded = false;
