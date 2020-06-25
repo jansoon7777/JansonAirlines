@@ -5,18 +5,17 @@ import users from "../users.json"
 import seats from "../seats.json"
 addButtonEvent();
 addOnChangeEvents();
+datePick();
 var summary = new Object();
 
 import Icon from "./assets/img/proba.png"
 import Icon2 from "./assets/img/siedem.png"
 
-console.log(users);
-var login = "1";
-var password = "1";
 
 document.getElementById("logUser").addEventListener("click", logUser);
 
 function logUser() {
+
     var loginSucceeded = false;
     let login = document.getElementById("login").value;
     debugger;
@@ -51,7 +50,28 @@ function addButtonEvent() {
         $("#summary").removeClass("hidden");
     });
 }
+function datePick() {
 
+var dateToday = new Date();
+var dates = $("#wylot, #powrot").datepicker({
+    defaultDate: "+1w",
+    changeMonth: true,
+    numberOfMonths: 2,
+    minDate: dateToday,
+    onSelect: function(selectedDate) {
+        var option = this.id == "wylot" ? "minDate" : "maxDate",
+            instance = $(this).data("datepicker"),
+            date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+        dates.not(this).datepicker("option", option, date);
+        var value = $("#wylot").val();
+        summary.wylot = value;
+        var value = $("#powrot").val();
+        summary.powrot = value;
+        updateSummary();
+        
+    }
+});
+}
 function addOnChangeEvents() {
     $("#destination").change(function () {
         var destination = $("#destination").val();

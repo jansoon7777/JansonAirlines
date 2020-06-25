@@ -4,6 +4,7 @@ body {
     background-image: url("../sky2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin: 0 !important;
@@ -74,8 +75,24 @@ body {
     color: whitesmoke;
     display: inline-block;
     justify-content: space-around;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+ 
 }
-
+.navi {
+    width: 100%;
+    padding: 10px 0;
+    background-color: navy;
+    text-align: center;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: space-around;
+  
+ 
+}
 
 .content {
     background-color: white;
@@ -154,7 +171,9 @@ body {
     top: 0;
     z-index: 100;
 }
-
+.footer {
+    position: static;
+}
 #logging {
     border: 0;
     width: 15%;
@@ -185,7 +204,11 @@ ol > li {
     float: left;
     width: 150px;
     height: 40px;
-    border-right: 1px dashed white;
+    border-right: 1px solid white;
+}
+
+ol > li:first-child {
+    border-left: 1px solid white;
 }
 
 ol > li:hover {
